@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary-color: #bce10c;
+  --secondary-color: #E8F1F2;
+  --accent-color: #e48c04;
+  --text-color: #2D3748;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('/public/HOWAMiLogo.png');
+  background-repeat: repeat;
+  background-size: 200px;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(232, 241, 242, 0.95);
+  z-index: -1;
+}
